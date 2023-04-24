@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="328.0" prefWidth="220.0"  xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculatorfxml.HelloController">
+
+    <TextArea fx:id="textArea"  prefHeight="100.0" prefWidth="220.0" editable="false">
+        <font>
+            <Font size="16.0" />
+        </font>
+
+    </TextArea>
+    <HBox prefHeight="57.0" prefWidth="220.0">
+        <children>
+            <Button fx:id="pro" alignment="CENTER" contentDisplay="CENTER" onAction="#proc" prefHeight="57.0" prefWidth="55.0" text="\%" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="CE" alignment="CENTER" contentDisplay="CENTER" onAction="#del" prefHeight="57.0" prefWidth="55.0" text="CE" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+
+            <Button fx:id="C" alignment="CENTER" contentDisplay="CENTER" onAction="#del" prefHeight="57.0" prefWidth="55.0" text="C" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="delet" alignment="CENTER" contentDisplay="CENTER" onAction="#del" prefHeight="57.0" prefWidth="55.0" text="del" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+        </children>
+    </HBox>
+    <HBox prefHeight="57.0" prefWidth="220.0">
+        <children>
+            <Button fx:id="inverse" alignment="CENTER" contentDisplay="CENTER" onAction="#invers" prefHeight="57.0" prefWidth="55.0" text="1/x" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="square" alignment="CENTER" contentDisplay="CENTER" onAction="#squar" prefHeight="57.0" prefWidth="55.0" text="x²" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="root" alignment="CENTER" contentDisplay="CENTER" onAction="#roo" prefHeight="57.0" prefWidth="55.0" text="√x" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="del" alignment="CENTER" contentDisplay="CENTER" onAction="#butdel" prefHeight="57.0" prefWidth="55.0" text="/" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+        </children>
+    </HBox>
+    <HBox prefHeight="57.0" prefWidth="220.0">
+        <children>
+            <Button fx:id="bt7" alignment="CENTER" contentDisplay="CENTER" onAction="#but7" prefHeight="57.0" prefWidth="55.0" text="7" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="bt8" alignment="CENTER" contentDisplay="CENTER" onAction="#but8" prefHeight="57.0" prefWidth="55.0" text="8" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="bt9" alignment="CENTER" contentDisplay="CENTER" onAction="#but9" prefHeight="57.0" prefWidth="55.0" text="9" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="bt_multi" alignment="CENTER" contentDisplay="CENTER" onAction="#butmulti" prefHeight="57.0" prefWidth="55.0" text="*" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+        </children>
+    </HBox>
+    <HBox prefHeight="57.0" prefWidth="220.0">
+        <children>
+            <Button fx:id="bt4" alignment="CENTER" contentDisplay="CENTER" onAction="#but4" prefHeight="57.0" prefWidth="55.0" text="4" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="bt5" alignment="CENTER" contentDisplay="CENTER" onAction="#but5" prefHeight="57.0" prefWidth="55.0" text="5" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="bt6" alignment="CENTER" contentDisplay="CENTER" onAction="#but6" prefHeight="57.0" prefWidth="55.0" text="6" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="bt_minus" alignment="CENTER" contentDisplay="CENTER" onAction="#butminus" prefHeight="57.0" prefWidth="55.0" text="-" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+        </children>
+    </HBox>
+    <HBox prefHeight="57.0" prefWidth="220.0">
+        <children>
+            <Button fx:id="bt1" alignment="CENTER" contentDisplay="CENTER" onAction="#but1" prefHeight="57.0" prefWidth="55.0" text="1" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="bt2" alignment="CENTER" contentDisplay="CENTER" onAction="#but2" prefHeight="57.0" prefWidth="55.0" text="2" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="bt3" alignment="CENTER" contentDisplay="CENTER" onAction="#but3" prefHeight="57.0" prefWidth="55.0" text="3" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="bt_plus" alignment="CENTER" contentDisplay="CENTER" onAction="#butplus" prefHeight="57.0" prefWidth="55.0" text="+" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+        </children>
+    </HBox>
+    <HBox prefHeight="57.0" prefWidth="220.0">
+        <children>
+            <Button fx:id="bt_minplus" alignment="CENTER" contentDisplay="CENTER" onAction="#minplus" prefHeight="57.0" prefWidth="55.0" text="-/+" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="bt0" alignment="CENTER" contentDisplay="CENTER" onAction="#but0" prefHeight="57.0" prefWidth="55.0" text="0" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="bt_zap" alignment="CENTER" contentDisplay="CENTER" onAction="#butzap" prefHeight="57.0" prefWidth="55.0" text="," >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+            <Button fx:id="bt_ravno" alignment="CENTER" contentDisplay="CENTER" onAction="#compute" prefHeight="57.0" prefWidth="55.0" text="=" >
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Button>
+        </children>
+    </HBox>
+</VBox>
+
