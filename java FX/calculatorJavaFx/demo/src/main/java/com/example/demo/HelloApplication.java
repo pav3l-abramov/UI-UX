@@ -38,6 +38,7 @@ public class HelloApplication extends Application {
         TextArea textArea = new TextArea("0");
         StringBuilder  text =new StringBuilder ("");
         textArea.setStyle( "-fx-font-size: 23" );
+        textArea.setEditable(false);
         textArea.lengthProperty();
         StackPane.setMargin(textArea, new Insets(20, 0, 30, 50));
 
