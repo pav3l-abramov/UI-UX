@@ -68,6 +68,31 @@ public class HelloApplication extends Application {
         Button bt_ravno = new Button("=");bt_ravno.setOnAction( event -> {textArea.setText(compute(text));text.setLength(0);});
         Button bt_zap = new Button(",");bt_zap.setOnAction( event -> {text.append(".");textArea.setText(text.toString());});
         Button bt_minplus = new Button("+/-");bt_minplus.setOnAction( event -> {r.set(plusmin(text));textArea.setText(plusmin(text));text.setLength(0);text.append(r);});
+        bt0.setStyle( "-fx-font-size: 23" );
+        bt1.setStyle( "-fx-font-size: 23" );
+        bt2.setStyle( "-fx-font-size: 23" );
+        bt3.setStyle( "-fx-font-size: 23" );
+        bt4.setStyle( "-fx-font-size: 23" );
+        bt5.setStyle( "-fx-font-size: 23" );
+        bt6.setStyle( "-fx-font-size: 23" );
+        bt7.setStyle( "-fx-font-size: 23" );
+        bt8.setStyle( "-fx-font-size: 23" );
+        bt9.setStyle( "-fx-font-size: 23" );
+        bt_del.setStyle( "-fx-font-size: 23" );
+        bt_proc.setStyle( "-fx-font-size: 23" );
+        bt_CE.setStyle( "-fx-font-size: 23" );
+        bt_C.setStyle( "-fx-font-size: 23" );
+        bt_delet.setStyle( "-fx-font-size: 23" );
+        bt_inverse.setStyle( "-fx-font-size: 23" );
+        bt_square.setStyle( "-fx-font-size: 23" );
+        bt_root.setStyle( "-fx-font-size: 23" );
+        bt_multi.setStyle( "-fx-font-size: 23" );
+        bt_minus.setStyle( "-fx-font-size: 23" );
+        bt_plus.setStyle( "-fx-font-size: 23" );
+        bt_ravno.setStyle( "-fx-font-size: 23" );
+        bt_zap.setStyle( "-fx-font-size: 23" );
+        bt_minplus.setStyle( "-fx-font-size: 23" );
+
 
         clc.addButton(bt_proc, bt_CE, bt_C, bt_delet,bt_inverse, bt_square, bt_root, bt_del,bt7, bt8, bt9, bt_multi,bt4, bt5, bt6, bt_minus,bt1, bt2, bt3, bt_plus,bt_minplus, bt0, bt_zap, bt_ravno);
         clc.setBtnMaxSize();
