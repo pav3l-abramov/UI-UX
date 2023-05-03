@@ -99,8 +99,6 @@ public class HelloApplication extends Application {
             String[] inputlitle=input[i].toString().split("--");
             if (Objects.equals(inputlitle[1], sort) &&i>0){sortText.append(input[i]);}
             if (sort=="all"&&i>0){sortText.append(input[i]);}
-            System.out.println(inputlitle[1]);
-            System.out.println(sort);
         }
         return sortText.toString();
     }
