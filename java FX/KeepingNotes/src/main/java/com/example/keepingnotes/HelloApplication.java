@@ -84,6 +84,7 @@ public class HelloApplication extends Application {
     private void startScene(Stage stage, Pane pane) {
         Scene scene = new Scene(pane, 400, 300, Color.KHAKI);
         stage.setTitle("Keeping Notes");
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setMinHeight(400);
         stage.setMinWidth(300);
         stage.setMaxHeight(400);

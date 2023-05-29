@@ -1,0 +1,86 @@
+/* Modify the background color of the Pane area of ​​TabPane */
+.tab-pane {
+    -fx-background-color: #333333;
+
+}
+
+/* Modify the background color of Tab */
+.tab {
+    -fx-background-color: #333333;
+    -fx-pref-width: 100;
+}
+/* Modify the background color of the top bar */
+.tab-pane>*.tab-header-area>*.tab-header-background
+{
+    -fx-background-color: #333333;
+
+}
+.tab-pane > .tab-header-area > .headers-region {
+    -fx-alignment: CENTER;
+}
+
+
+/* Modify the color of the text in the tab */
+.tab-label {
+    -fx-text-fill: #e6e6e6;
+
+}
+/* Child selector, select the child element tab-label when Tab is selected */
+.tab:selected .tab-label {
+    -fx-text-fill: #003333ff;
+}
+/* Set the background color when the tab is selected */
+.tab:selected {
+    -fx-background-color: #990000ff;
+}
+/* When Tab is selected, select its border and modify the style */
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-radius: 0px;
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-border-color: #990000ff;
+}
+.button {
+    -fx-text-fill: #333333;
+    -fx-background-color: #990000ff;
+    -fx-font-size: 16pt;
+    -fx-pref-width: 320px;
+}
+.label{
+-fx-font-size: 14pt;
+-fx-text-fill: #e6e6e6;
+}
+.choice-box .label {
+     -fx-text-fill: #990000ff;
+     -fx-font-size: 14pt;
+}
+
+.text-input {
+ -fx-font-size: 14pt;
+-fx-control-inner-background:#333333;
+ -fx-font-family: Consolas;
+  -fx-highlight-fill: #990000ff;
+   -fx-highlight-text-fill: #000000;
+    -fx-text-fill: #e6e6e6;
+
+        -fx-border-color: #e6e6e6;
+        -fx-background-color: #e6e6e6;
+        -fx-control-inner-background:#333333;
+}
+/* Set the background color for the open-button area */
+.choice-box  {
+    -fx-background-color: #333333;
+}
+
+/* Change the background color of the popup */
+#choice-box-popup-menu {
+        -fx-background-color: #333333;
+}
+.scroll-bar {
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 1em;
+	-fx-background-color: #333333;
+}
+
+
+
+
