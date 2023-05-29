@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.notelist_fxml.Tab1Controller"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+    <VBox alignment="BASELINE_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml">
+        <padding>
+            <Insets  top="10.0"/>
+        </padding>
+        <HBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml">
+            <Label> Link: </Label>
+            <TextArea fx:id="textLink" prefHeight="20.0" prefWidth="220.0" editable="true"></TextArea>
+        </HBox>
+        <HBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml">
+            <Label> Title: </Label>
+            <TextArea fx:id="textTitle" prefHeight="20.0" prefWidth="220.0" editable="true"></TextArea>
+        </HBox>
+        <HBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml">
+            <Label> Choose category:</Label>
+            <ChoiceBox fx:id="ChoiceBox" layoutX="16.0" layoutY="52.0" prefWidth="85.0" value="work">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="work" />
+                        <String fx:value="study" />
+                        <String fx:value="fun" />
+                        <String fx:value="game" />
+                        <String fx:value="goods" />
+                        <String fx:value="other" />
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+        </HBox>
+        <Button id="Add" text="ADD" prefWidth="320.0" onAction="#add">
+
+        </Button>
+    </VBox>
+    </children>
+</AnchorPane>
+
