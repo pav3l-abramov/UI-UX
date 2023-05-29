@@ -104,6 +104,7 @@ public class HelloApplication extends Application {
         HBox hline1Tab2= new HBox(new Label("Choose category:"),sortBox);
         VBox vlineTab2 = new VBox (hline1Tab2,sort);
         vlineTab2.setSpacing(20);
+        hline1Tab2.setSpacing(20);
         vlineTab2.setPadding(new Insets(20,0,0,0));
         vlineTab2.setAlignment(Pos.valueOf("BASELINE_LEFT"));
         hline1Tab2.setAlignment(Pos.valueOf("CENTER"));
@@ -153,14 +154,7 @@ public class HelloApplication extends Application {
 
         return sortText.toString();
     }
-    /*
-            String[] inputFin = text.toString().split("NewString");
 
-        for (var i=1; i<Integer.valueOf(input.length) ;i++) {
-            String[] inputlitle=input[i].toString().split("\t");
-            if (Objects.equals(inputlitle[1], sort) &&i>0){sortText.append(inputFin[i]);}
-            if (sort=="all"&&i>0){sortText.append(inputFin[i]);}
-     */
 
     private void startScene(Stage stage, Pane pane) {
         Scene scene = new Scene(pane, 720, 440);
